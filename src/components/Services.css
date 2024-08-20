@@ -1,0 +1,136 @@
+.services {
+    border-radius :20px; 
+    margin: 20px;
+    padding: 50px 0;
+    background-color: #f0f8ff; /* Very light blue background */
+}
+
+.services-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #003366;
+    text-align: center;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #003366;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: #003366;
+    margin-right: 20px;
+    background-color: #f0f8ff; /* Very light blue background for the icons */
+}
+
+.service-item p {
+    font-size: 1.5rem;
+    color: #003366;
+}
+
+.services-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.svg-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .services-title {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .service-item {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .icon-circle {
+        margin-bottom: 15px;
+    }
+
+    .services-image {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+/* Page transition animations */
+.page-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+.page-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+}
+.page-exit {
+    opacity: 1;
+}
+.page-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+/* Keyframes for icon bounce animation */
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .icon-circle {
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #003366;
+      border-radius: 50%;
+      font-size: 2.5rem;
+      color: #003366;
+      margin-right: 20px;
+      background-color: #f0f8ff; /* Very light blue background for the icons */
+      animation: bounce 1.5s infinite ease-in-out;
+  }
+  
+  /* Animations for scroll effects */
+  .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  @media (max-width: 768px) {
+      .icon-circle {
+          margin-bottom: 15px;
+          animation: none; /* Disable bounce on small screens */
+      }
+  }
+  

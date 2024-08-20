@@ -1,0 +1,88 @@
+.brands {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    margin: 20px;
+    border-radius: 15px;
+  }
+  
+  .brands-title {
+    font-size: 1.75rem;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .brands-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #003366;
+    margin: 10px auto 0;
+  }
+  
+  .brands-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  
+  .brand-item {
+    flex: 1 1 20%; /* Each brand will take 20% of the width on large screens */
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .brand-logo {
+    max-width: 100px; /* Ensure logos are evenly sized */
+    max-height: 100px;
+    margin: 20px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .brand-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .brand-item {
+      flex: 1 1 45%; /* Adjusts to 2 logos per row on smaller screens */
+      max-width: 150px;
+    }
+  
+    .brand-logo {
+      max-width: 80px;
+      max-height: 80px;
+    }
+  
+    .brands-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #003366;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: #0056b3;
+  }
+  

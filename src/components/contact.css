@@ -1,0 +1,103 @@
+/* Subscribe Section */
+.subscribe-newsletter {
+    background-color: #0c4da2;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.subscribe-newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subscribe-newsletter p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    width: 300px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.subscribe-form button {
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #ff9900;
+}
+
+/* Footer Section */
+.contact-footer {
+    background-color: #0b348c;
+    color: white;
+    padding: 60px 0;
+}
+
+.footer-logo h4 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+}
+
+.footer-logo-img {
+    max-width: 60px;
+}
+
+h5 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ffcc00;
+}
+
+@media (max-width: 767px) {
+    .subscribe-form {
+        display: block;
+    }
+
+    .subscribe-form input[type="email"], .subscribe-form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
