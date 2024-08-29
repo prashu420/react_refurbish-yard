@@ -1,7 +1,8 @@
 import React from 'react';
-import './Header.css';
+import './Header.css';  // Import CSS here
 import { Container, Navbar, Nav, Row, Col } from 'react-bootstrap';
 import { Link as ScrollLink } from 'react-scroll';  // Import from react-scroll
+
 
 function Header() {
   return (
@@ -12,8 +13,12 @@ function Header() {
           <Navbar.Brand href="/" className="brand">
             <img src={require('../assets/images/logo.png')} alt="Logo" className="logo-img" />
             <div className="logo-text">
-              Refurbish<br />
-              Yard 
+              Tech refurbish<br />
+              <span className="yard-text">
+                Yard
+                <img src={require('../assets/images/logo1.png')} alt="Logo" className="logo-img1" />
+                {/* <FaStar className="yard-icon" /> Example icon */}
+              </span>
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -27,7 +32,6 @@ function Header() {
               <Nav.Link as={ScrollLink} to="nearme" smooth={true} duration={500}>Near Me</Nav.Link>
               {/* <Nav.Link as={ScrollLink} to="branches" smooth={true} duration={500}>Branches</Nav.Link> */}
               <Nav.Link as={ScrollLink} to="contact" smooth={true} duration={500}>Contact Us</Nav.Link>
-             
             </Nav>
           </Navbar.Collapse>
         </Container>

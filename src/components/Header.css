@@ -219,3 +219,60 @@
     opacity: 0;
     transition: opacity 300ms;
 }
+/* Add your existing CSS styles here */
+
+.logo-text {
+    display: flex;
+    align-items: center; /* Center vertically */
+    /* Adjust the alignment to fit the space properly */
+  }
+  
+  .yard-text {
+    display: flex;
+    align-items: center; /* Center vertically */
+  }
+  
+  .logo-img1 {
+    width: 120px; /* Adjust the size of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 8px; /* Spacing between text and image */
+    vertical-align: middle; /* Align image with text */
+  }
+  
+  /* Ensure proper spacing around the text and image */
+  .yard-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .logo-img1 {
+      width: 20px; /* Smaller size for mobile devices */
+    }
+  }
+ 
+/* Existing styles */
+
+.logo-img1 {
+  width: 120px; /* Adjust the size of the image as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 8px; /* Spacing between text and image */
+  vertical-align: middle; /* Align image with text */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
+}
+
+.logo-img1:hover {
+    transform: scale(1.2); /* Zoom in effect */
+  }
+  
+  /* Ensure proper spacing around the text and image */
+  .yard-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .logo-img1 {
+      width: 20px; /* Smaller size for mobile devices */
+    }
+  }

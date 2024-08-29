@@ -12,7 +12,7 @@ const Contact = () => {
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className="footer-logo">
                             <img src={require('../assets/images/logo.png')} alt="Logo" className="logo-img" />
-                                <h4>Refurbish Yard</h4>
+                                <h4> Tech Refurbish Yard</h4>
                                 <p>Reach us at</p>
                                 <p>No. 417/1, 4th B Cross, Ramamurthy Nagar, Bengaluru - 560016</p>
                             </div>
@@ -51,8 +51,9 @@ const Contact = () => {
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <h5>Contact</h5>
                             <ul>
-                                <li>Phone: +91 5465564567</li>
-                                <li>Fax: 5656565786</li>
+                                <li>Phone: +91 7760097778, 8460388974</li>
+                             
+                                <li>Landline-08035827097</li>
                                 <li>Email: refurbishyard@gmail.com</li>
                             </ul>
                         </div>

@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="footer bg-blue">
       <div className="container d-flex justify-content-between align-items-center">
-        <p className="footer-text">&copy; 2024 Refurbish Yard. All rights reserved.</p>
+        <p className="footer-text">&copy; 2024 Tech  Refurbish Yard. All rights reserved.</p>
         <div className="footer-icons">
           <a href="https://www.facebook.com/profile.php?id=61564413098155" className="footer-icon-link">
             <FaFacebook className="footer-icon" />
